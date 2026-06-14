@@ -1,0 +1,23 @@
+[project]
+name = "python-upskilling"
+version = "0.1.0"
+description = "Sample Python repository for upskilling."
+authors = [
+  { name = "Your Name" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.dependencies]
+pytest = { extras = [], version = "^8.0" }
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra"
+testpaths = ["tests"]
